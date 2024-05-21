@@ -27,9 +27,9 @@ Your goal is to find the commit that introduced the obvious math issue:
 
 ```
 git bisect start
-git bisect good v1.0
+git bisect good v1
 git bisect bad HEAD
-git bisect ./test.sh
+git bisect run ./test.sh
 git bisect reset
 ```
 
